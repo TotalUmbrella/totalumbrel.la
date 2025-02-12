@@ -1,5 +1,5 @@
 import { GetStaticProps, GetStaticPaths } from "next";
-import { getMarkdownNames, getMarkdownByName } from "./markdown";
+import { getMarkdownNames, getMarkdownByName } from "../markdown";
 
 type Props = {
     title: string;
