@@ -39,3 +39,15 @@ body {
     background-color: #44AF69;
   }
 }
+.link {
+  color: #44AF69;
+  font-weight: 600;
+}
+.header {
+  transition: 0.2s;
+  border-bottom: 2px solid transparent;
+}
+.header:hover {
+  border-bottom: 2px solid #44AF69;
+  cursor: pointer
+}
