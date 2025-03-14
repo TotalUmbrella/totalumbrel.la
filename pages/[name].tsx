@@ -12,9 +12,12 @@ export default function Page() {
     const [metadata, setMetadata] = useState(null);
     const [contentHtml, setContentHtml] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
+    const [isError, setIsError] = useState(false);
     useEffect(() => {
       fetch(`/api/markdown?name=${name}`)
-        .then((res) => res.json())
+        .then((res) => {
+          return res.json();
+        })
         .then((data) => {
           setMetadata(data.metadata);
           setContentHtml(data.contentHtml);
