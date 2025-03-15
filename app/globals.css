@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=League+Script&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Style+Script&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -107,20 +106,84 @@ body {
 
 .markdownbody ul {
   list-style-type: disc;
-  padding-left: 1em;
+  padding-left: 2em;
 }
-
+ 
 .markdownbody ul ul {
   list-style-type: circle;
-  padding-left: 1em;
+  padding-left: 2em;
 }
 
 .markdownbody ul ul ul {
   list-style-type: square;
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 
 .markdownbody ol {
   list-style-type: decimal;
+  padding-left: 2rem;
+}
+
+.markdownbody ol {
+  list-style-type: decimal;
+  padding-left: 2rem;
+}
+
+.markdownbody ol {
+  list-style-type: decimal;
+  padding-left: 2rem;
+}
+
+.markdownbody a {
+  color: #44AF69;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.1s;
+  border-bottom: 2px solid #171A21;
+}
+
+.markdownbody a:hover {
+  color: #2f7e4b;
+  font-weight: 600;
+  border-bottom: 2px solid #2f7e4b;
+}
+
+
+.markdownbody p {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.markdownbody code {
+  background-color: #292a36;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.3rem;
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.9rem;
+}
+
+.markdownbody pre code {
+  background-color: #292a36;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.3rem;
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.9rem;
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+  margin: 1rem;
+}
+
+.markdownbody blockquote {
   padding-left: 1rem;
+  border-left: 4px solid #44AF69;
+  color: #9fa3ab;
+}
+
+.markdownbody em {
+  font-style: italic;
+}
+
+.markdownbody em em {
+  font-style: bold;
 }
