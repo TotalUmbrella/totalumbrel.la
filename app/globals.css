@@ -19,7 +19,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Lora, serif;
-  color: #fdf6ec;
+  color: #edebe7;
 }
 .cursor {
   display: inline-block;
@@ -186,4 +186,8 @@ body {
 
 .markdownbody em em {
   font-style: bold;
+}
+
+.textName {
+  color: #a5a3a0;
 }

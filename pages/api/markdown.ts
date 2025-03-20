@@ -8,7 +8,14 @@ import html from "remark-html";
 const contentDirectory = path.join(process.cwd(), "items");
 
 export async function getMarkdownNames() {
-  const names = fs.readdirSync(contentDirectory).map((file) => file.replace(".md", ""));
+  const names = fs.readdirSync(contentDirectory).map((file) => {
+    const filePath = path.join(contentDirectory, file);
+    const fileContent = fs.readFileSync(filePath, 'utf8');
+    const { data } = matter(fileContent);
+    const name = file.replace(".md", "");
+    const title = data.title || name;
+    return [name, title];
+  });
   return names;
 }
 

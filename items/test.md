@@ -1,6 +1,7 @@
 ---
 title: "TEST"
 date: "2024-02-09"
+tags: ["tag1", "tag2", "tag3"]
 ---
 
 # test
@@ -17,5 +18,5 @@ gYATT
 
 # okay 
 
-## poo face
+## face
 ![Alt text](/images/image1.png)

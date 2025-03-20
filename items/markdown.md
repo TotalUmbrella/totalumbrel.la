@@ -1,4 +1,11 @@
-# Markdown: Syntax
+---
+title: "Markdown: Syntax file"
+date: "2024-02-09"
+tags: ["tag1", "tag2", "tag3"]
+---
+
+
+ Markdown: Syntax
 
 *   [Overview](#overview)
     *   [Philosophy](#philosophy)

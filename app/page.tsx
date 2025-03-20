@@ -20,7 +20,7 @@ export default function Home() {
           <br/>
           ill write more later
           <ul className="list-disc pl-5">
-            {array.map((name) =>  <li key={name}><Link className="link" href={`/${name}`}>{name}</Link></li>)}
+            {array.map((name) =>  <li key={name[1]}><Link className="link" href={`/${name[0]}`}>{name[1]}</Link></li>)}
           </ul>
         </main>
         <footer className="mb-5 width-full flex flex-row items-center justify-between text-lg font-medium">
