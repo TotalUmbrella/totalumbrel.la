@@ -5,13 +5,14 @@ import { useRouter } from "next/router";
 import "../app/globals.css"
 import Link from "next/link";
 
-
 export default function Page() {
     const router = useRouter();
     const name = router.query.name;
     const [metadata, setMetadata] = useState(null);
     const [contentHtml, setContentHtml] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
+    const [tags, setTags] = useState(null);
+
     useEffect(() => {
       fetch(`/api/markdown?name=${name}`)
         .then((res) => {
@@ -24,6 +25,18 @@ export default function Page() {
         });
     }, [name]);
     console.log(metadata);
+
+    useEffect(() => {
+      fetch('/api/getTags')
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          setTags(data);
+        });
+      }, [name]);
+
+
     if (isLoading) {
       return <p className="w-full h-full flex justify-center items-center"></p>;
     }
@@ -43,8 +56,12 @@ export default function Page() {
         <main className="width-full flex-grow flex flex-col items-left justify-first py-5">
           <div className="width-full flex flex-col">
                   <h1 className="text-3xl font-semibold">{metadata.title}</h1>
+                  <div className="flex flex-row items-center justify-start">
                   <p className="text-sm font-light textName">{metadata.date}</p>
-                  <div className="flex width-full flex-row justify-between"></div>
+                  <div className="w-2/5 flex justify-start flex-row items-start mx-2">
+                    {metadata.tags.map((tag2) =>  <div className="mx-1 text-base">#{tag2}</div>)}
+                  </div>
+                  </div>
           </div>
           <div className="markdownbody" dangerouslySetInnerHTML={{ __html: contentHtml }}></div>
         </main>
