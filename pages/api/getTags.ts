@@ -6,8 +6,7 @@ export default function handler(req, res) {
     const filePath = path.join(process.cwd(), 'public', 'tags.dat');
     const data = fs.readFileSync(filePath, 'utf8');
 
-
-    const conCatTags = data.split("\r\n");
+    const conCatTags = data.split("\n");
     const newTags = conCatTags.map((tagColor) => {
       const tag = tagColor.split("%");
       return tag;
