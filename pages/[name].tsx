@@ -32,11 +32,12 @@ export default function Page() {
           return res.json();
         })
         .then((data) => {
-          setTags(data);
+          setTags(data.tags);
         });
       }, [name]);
 
-
+    console.log(tags);
+    console.log(tags.#tag1
     if (isLoading) {
       return <p className="w-full h-full flex justify-center items-center"></p>;
     }
@@ -59,7 +60,7 @@ export default function Page() {
                   <div className="flex flex-row items-center justify-start">
                   <p className="text-sm font-light textName">{metadata.date}</p>
                   <div className="w-2/5 flex justify-start flex-row items-start mx-2">
-                    {metadata.tags.map((tag2) =>  <div className="mx-1 text-base">#{tag2}</div>)}
+                    {metadata.tags.map((tag2) =>  <div style = {{ color: tags[tag2]}}className="mx-1 text-base">#{tag2}</div>)}
                   </div>
                   </div>
           </div>
