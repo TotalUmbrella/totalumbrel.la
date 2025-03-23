@@ -1,18 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getMarkdownNames } from "../pages/api/markdown";
-import { Arapey } from "next/font/google";
 
 const array = await getMarkdownNames();
 console.log(array)
-var projects = []
-var misc = []
+var projects: any = []
+var misc: any = []
 
 for(let i=0; i < array.length; i++) {
-  if (array[i][1].tags.includes("project")){
-    projects.push(array[i])
-  } else if (array[i][1].tags.includes("misc")) {
-    misc.push(array[i])
+  const entry = array[i][1] as { tags: string[] };//typescript smipescript
+  
+  if (entry.tags.includes("project")) {
+    projects.push(array[i]);
+  } else if (entry.tags.includes("misc")) {
+    misc.push(array[i]);
   }
 }
 export default function Home() {
