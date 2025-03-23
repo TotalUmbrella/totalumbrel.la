@@ -56,8 +56,6 @@ body {
   cursor: pointer;
 }
 
-
-
 /* Headings */
 .markdownbody {
     font-family: Lora, serif;
@@ -69,6 +67,7 @@ body {
   font-weight: bold;
   border-bottom: 1px solid #3e3f4d;
   margin-bottom: 1rem;
+  clear: both;
 }
 
 .markdownbody h2 {
@@ -76,6 +75,7 @@ body {
   font-weight: bold;
   border-bottom: 1px solid #3e3f4d;
   margin-bottom: 1rem;
+  clear: both;
 }
 
 .markdownbody h3 {
@@ -152,6 +152,7 @@ body {
 .markdownbody p {
   margin-bottom: 1rem;
   margin-top: 1rem;
+  clear:both;
 }
 
 .markdownbody code {
@@ -190,4 +191,47 @@ body {
 
 .textName {
   color: #a5a3a0;
+}
+
+.markdownbody img {
+  border-radius: 3%;
+}
+
+.left-image {
+  float: left;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 16svw;
+}
+
+.right-image {
+  float: right;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 16svw;
+}
+
+.center-image {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 40svh;
+}
+
+.full-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.logo {
+  width: 2rem;
+}
+figcaption {
+  text-align: center;
 }

@@ -1,9 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getMarkdownNames } from "../pages/api/markdown";
+import { Arapey } from "next/font/google";
 
 const array = await getMarkdownNames();
+console.log(array)
+var projects = []
+var misc = []
 
+for(let i=0; i < array.length; i++) {
+  if (array[i][1].tags.includes("project")){
+    projects.push(array[i])
+  } else if (array[i][1].tags.includes("misc")) {
+    misc.push(array[i])
+  }
+}
 export default function Home() {
   return (
     <div className="flex items-center justify-center min-h-screen">
@@ -15,20 +26,34 @@ export default function Home() {
           <span className="cursor"></span>
         </header>
         <main className="width-full flex-grow flex flex-col items-left justify-first py-5">
-          words and stuff blah blah blah
+          
+          Hi. This is a website which aims to showcase and document things that I am making/have made.
           <br/>
           <br/>
-          ill write more later
+          I'm passionate about a lot of things, including engineering and programming. 
+          <br/>
+          you can take a look at the projects that I've been working on,
           <ul className="list-disc pl-5">
-            {array.map((name) =>  <li key={name[1]}><Link className="link" href={`/${name[0]}`}>{name[1]}</Link></li>)}
+            {projects.map((name) =>  <li key={name[1].title}><Link className="link" href={`/${name[0]}`}>{name[1].title}</Link></li>)}
           </ul>
+          <br/>
+          <br/>
+          <br/>
+          or check out blog posts on some other miscellaneous stuff
+          <ul className="list-disc pl-5">
+            {misc.map((name) =>  <li key={name[1].title}><Link className="link" href={`/${name[0]}`}>{name[1].title}</Link></li>)}
+          </ul>
+          <br/>
+          I will continue to add things of interest in the future.
         </main>
         <footer className="mb-5 width-full flex flex-row items-center justify-between text-lg font-medium">
         <div>
-         © Jerry Zhang
+         Jerry Zhang
         </div>
         <div>
-          gyatt
+          <a target = "_blank" href="https://github.com/TotalUmbrella">
+            <img src="github.png" className="logo"/>
+          </a>
         </div>
         </footer>
       </div>

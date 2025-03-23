@@ -1,11 +1,13 @@
 ---
 title: "Markdown: Syntax file"
 date: "2024-02-09"
-tags: ["tag1", "tag2", "tag3"]
+tags: ["misc","tag1"]
 ---
 
 
- Markdown: Syntax
+This is a page generated for testing when creating the website, taken from [mxstbr](https://github.com/mxstbr/markdown-test-file)
+
+many of the links don't work, it was mostly used to test the style.
 
 *   [Overview](#overview)
     *   [Philosophy](#philosophy)
@@ -26,15 +28,9 @@ tags: ["tag1", "tag2", "tag3"]
 *   [Miscellaneous](#misc)
     *   [Backslash Escapes](#backslash)
     *   [Automatic Links](#autolink)
-
-
-**Note:** This document is itself written using Markdown; you
-can [see the source for it by adding '.text' to the URL](/projects/markdown/syntax.text).
-
 ----
 
 ## Overview
-
 ### Philosophy
 
 Markdown is intended to be as easy-to-read and easy-to-write as is feasible.
