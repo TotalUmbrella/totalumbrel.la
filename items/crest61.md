@@ -45,7 +45,7 @@ The design state was definitely the most fun, allowing me to do basically whatev
 
 The first step was to make an ortholinear keyboard layout with [ergogen](https://ergogen.cache.works/), which takes in a yaml/json file and outputs layouts drawings and a netted kicad file.
 
-You can see the layout I settled with for the right side 👉, with the left side being a quite similar mirror image.
+>You can see the layout I settled with for the right side 👉, with the left side being a quite similar mirror image.
 
 While designing this layout, I had a few problems which I initially aimed to solve:
 - my left hand 👍 could comfortably touch type, but my right hand 🖐 needs to hover over the keyboard to press enter and backspace.
@@ -61,3 +61,25 @@ While designing this layout, I had a few problems which I initially aimed to sol
 #### PCB
 
 In this stage, I was forced to learn the pcb editor [kicad](https://www.kicad.org/), which actually had a smoother learning curve than I first expected.
+
+<figure class="left-image">
+  <Image src="images/crest61/kicad-right.png" alt="Alt text"/>
+  <figcaption>what beautiful professional traces</figcaption>
+</figure>
+
+Ergogen generates a netted pcb file for you, which means you can import it straight into kicad, and all the connections are marked for you to join with traces. The image to the left is of the left side pcb, with all the traces drawn into place. 
+
+This is actually where we have to start being pedantic, because this design will get shipped off to China to be manufactured. 😨
+
+The hardest part about this stage was accounting for the fact that my keyboard was designed to be a sort of hybrid between your [typical ortho split](https://github.com/foostan/crkbd) and a [classic 75%](https://keychron.com.au/collections/75-layout-keyboards/products/keychron-k2-wireless-mechanical-keyboard). Since my board has two keys larger than 1.75u, it needs fitting stab holes in the pcb. 
+
+Designing the pcbs was fairly difficult, however unforunately for me, it was not the hardest part of the project...
+
+#### Case 
+
+<figure class="center-image">
+  <Image src="images/crest61/kicad-right.png" alt="Alt text"/>
+  <figcaption>what beautiful professional traces</figcaption>
+</figure>
+
+I'd like to preface this section by saying that I am by no means a professional, only slightly casually experienced in the field of CAD design, and if you have proper experience, I urge you to stop reading for your own sanity... 
