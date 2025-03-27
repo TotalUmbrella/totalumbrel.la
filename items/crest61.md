@@ -5,7 +5,7 @@ tags: ["project"]
 ---
 
 <figure class="full-image">
-  <img src="/images/crest61/board.png" alt="Alt text">
+  <Image src="/images/crest61/board.png" alt="Alt text"/>
   <figcaption>Crest 61</figcaption>
 </figure>
 

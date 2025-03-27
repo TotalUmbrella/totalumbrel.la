@@ -72,7 +72,7 @@ asdfasdfsad
 
 asdfsdaf
 <figure class="right-image">
-  <img src="/images/image2.png" alt="Alt text">
+  <Image src="/images/image2.png" alt="Alt text"/>
   <figcaption>Caption for image 2</figcaption>
 </figure>
 

@@ -6,6 +6,7 @@ import Head from 'next/head';
 import Link from "next/link";
 import '../app/globals.css';
 import {marked} from 'marked';
+import Image from 'next/image';
 
 const Page = ({ contents, data, tags }) => {
       return (
