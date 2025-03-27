@@ -235,3 +235,8 @@ body {
 figcaption {
   text-align: center;
 }
+
+.spacer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
