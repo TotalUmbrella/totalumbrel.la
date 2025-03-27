@@ -148,11 +148,24 @@ body {
   border-bottom: 2px solid #2f7e4b;
 }
 
+.linkClass {
+  color: #44AF69;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.1s;
+  border-bottom: 2px solid #171A21;
+}
+
+.linkClass:hover {
+  color: #2f7e4b;
+  font-weight: 600;
+  border-bottom: 2px solid #2f7e4b;
+}
+
 
 .markdownbody p {
   margin-bottom: 1rem;
   margin-top: 1rem;
-  clear:both;
 }
 
 .markdownbody code {
@@ -227,6 +240,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .logo {
@@ -234,6 +249,7 @@ body {
 }
 figcaption {
   text-align: center;
+  color: #edebe786;
 }
 
 .spacer {

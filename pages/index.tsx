@@ -26,12 +26,12 @@ const Home = (filesMeta) => {
           <div className="spacer"></div>
           you can take a look at the projects that I've been working on,
           <ul className="list-disc pl-5">
-            {projects.map((name) =>  <li key={name.data.title}><Link className="link" href={`/${name.filename}`}>{name.data.title}</Link></li>)}
+            {projects.map((name) =>  <li key={name.data.title}><Link className="linkClass" href={`/${name.filename}`}>{name.data.title}</Link></li>)}
           </ul>
           <div className="spacer"></div><div className="spacer"></div>
           or check out blog posts on some other miscellaneous stuff
           <ul className="list-disc pl-5">
-            {misc.map((name) =>  <li key={name.data.title}><Link className="link" href={`/${name.filename}`}>{name.data.title}</Link></li>)}
+            {misc.map((name) =>  <li key={name.data.title}><Link className="linkClass" href={`/${name.filename}`}>{name.data.title}</Link></li>)}
           </ul>
           <br/>
           I will continue to add things of interest in the future.
