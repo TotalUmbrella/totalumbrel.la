@@ -78,8 +78,8 @@ Designing the pcbs was fairly difficult, however unforunately for me, it was not
 #### Case 
 
 <figure class="center-image">
-  <Image src="images/crest61/kicad-right.png" alt="Alt text"/>
-  <figcaption>what beautiful professional traces</figcaption>
+  <Image src="images/crest61/fusion-right.png" alt="Alt text"/>
+  <figcaption></figcaption>
 </figure>
 
 I'd like to preface this section by saying that I am by no means a professional, only slightly casually experienced in the field of CAD design, and if you have proper experience, I urge you to stop reading for your own sanity... 
