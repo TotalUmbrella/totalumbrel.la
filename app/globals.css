@@ -207,13 +207,13 @@ body {
 }
 
 .markdownbody img {
-  border-radius: 3%;
+  border-radius: 1rem;
 }
 
 .left-image {
   float: left;
   margin-right: 2rem;
-  margin-top: 1rem;
+  margin-top: 0.2rem;
   margin-bottom: 1rem;
   max-width: 20svw;
 }
@@ -221,9 +221,17 @@ body {
 .right-image {
   float: right;
   margin-left: 2rem;
-  margin-top: 1rem;
+  margin-top: 0.2rem;
   margin-bottom: 1rem;
   max-width: 20svw;
+}
+
+.small-right-image {
+  float: right;
+  margin-left: 2rem;
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
+  max-width: 10svw;
 }
 
 .center-image {
@@ -242,6 +250,18 @@ body {
   max-width: 100%;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
+}
+
+.multiple-image {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.multiple-image img {
+  max-width: 15svw;
 }
 
 .first {
