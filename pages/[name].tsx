@@ -5,8 +5,13 @@ import matter from 'gray-matter';
 import Head from 'next/head';
 import Link from "next/link";
 import '../app/globals.css';
-import {marked} from 'marked';
+import { remark } from 'remark';
+import html from 'remark-html';
+import prism from 'remark-prism'; 
 import Image from 'next/image';
+import 'prismjs/themes/prism-tomorrow.css'; 
+
+
 
 const Page = ({ contents, data, tags }) => {
       return (
@@ -63,7 +68,11 @@ export const getStaticProps = async ({params: { name }}) => {
 
   const contents =fs.readFileSync(path.join('items',name+'.md')).toString();
   const parsedContents = matter(contents);
-  const markdownContents = marked(parsedContents.content);
+  const processedContent = await remark()
+  .use(html, { sanitize: false })
+  .use(prism) 
+  .process(parsedContents.content);
+  const markdownContents = processedContent.toString();
 
   const tags = fs.readFileSync(path.join('public','tags.dat')).toString();
   const conCatTags = tags.split("\n");
