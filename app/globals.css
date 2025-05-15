@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Script&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Style+Script&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import 'prismjs/themes/prism-tomorrow.css';
+@import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -278,28 +281,26 @@ figcaption {
   margin-bottom: 1rem;
 }
 
-/* Make code blocks look good */
-pre {
-  background: #1e1e1e; /* or your theme background */
-  padding: 1rem;
-  border-radius: 8px;
-  overflow-x: auto;
-  font-size: 0.9rem;
-  margin: 1.5rem 0;
+
+/* Remove extra padding, margin, border, box shadow */
+.remark-highlight,
+.remark-highlight pre,
+.remark-highlight code,
+pre[class*="language-"],
+code[class*="language-"] {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  overflow: auto;
+  line-height: 1.5;
 }
 
-/* Optional: style the <code> inside <pre> */
-pre code {
-  background: none;
-  padding: 0;
-  color: inherit;
-  font-family: Menlo, Monaco, 'Courier New', monospace;
-}
-
-/* If you want code inline (not blocks) to also look good */
-code {
-  background: rgba(0, 0, 0, 0.05);
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
+code[class*="language-"] {
+  margin-bottom: 1rem !important;
+  padding: 2rem !important;
+  background-color: #11151d !important;
+  border-radius: 0.7rem !important;
+  overflow-wrap: ;
 }
