@@ -89,5 +89,10 @@ All of the individual pages are pulled together with a hyperlink index in index.
 
 {misc.map((name) =>  <li key={name.data.title}><Link className="linkClass" href={`/${name.filename}`}>{name.data.title}</Link></li>)}// for misc
 ```
+> I could never figure out how to style this stupid horizontal scroll bar...
 
 Code density wise this project is pretty light, but it took me a few different approaches and perspectives to get it up and running. A *lot* was learnt about how Next.js works. 🤗
+
+That is basically it for the core logic, everything else is filler and boilerplate.
+
+For being such a simple site, I spent a surprisingly long amount of time working on the css... I guess I always do (I hate css 😭). But hey, in the end it turned out a pretty sleek design. I want to find a way to statically add images or thumbnails onto the entries but... I guess thats for a later date.

@@ -1,8 +1,14 @@
 import type { NextConfig } from "next";
 
+const repo = 'totalumbrel.la'; //for correct image directories
+
 const nextConfig: NextConfig = {
   output: 'export',
-  /* config options here */
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}/`,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

@@ -8,7 +8,6 @@ import '../app/globals.css';
 import { remark } from 'remark';
 import html from 'remark-html';
 import prism from 'remark-prism'; 
-import Image from 'next/image';
 import 'prismjs/themes/prism-tomorrow.css'; 
 
 
@@ -41,7 +40,7 @@ const Page = ({ contents, data, tags }) => {
           </div>
           <div>
             <a target = "_blank" href="https://github.com/TotalUmbrella">
-              <img src="github.png" className="logo"/>
+              <img src="/totalumbrel.la/github.png" className="logo"/>
             </a>
           </div>
           </footer>

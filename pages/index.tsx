@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Link from "next/link";
 import fs from 'fs';
 import path from 'path';
@@ -42,7 +42,7 @@ const Home = (filesMeta) => {
         </div>
         <div>
           <a target = "_blank" href="https://github.com/TotalUmbrella">
-            <img src="github.png" className="logo"/>
+            <img src="/totalumbrel.la/github.png" className="logo"/>
           </a>
         </div>
         </footer>

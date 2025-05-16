@@ -282,7 +282,6 @@ figcaption {
 }
 
 
-/* Remove extra padding, margin, border, box shadow */
 .remark-highlight,
 .remark-highlight pre,
 .remark-highlight code,
@@ -295,7 +294,9 @@ code[class*="language-"] {
   background: transparent !important;
   overflow: auto;
   line-height: 1.5;
+
 }
+
 
 code[class*="language-"] {
   margin-bottom: 1rem !important;
