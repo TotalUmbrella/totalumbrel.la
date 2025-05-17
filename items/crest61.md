@@ -21,7 +21,7 @@ So I decided to jump straight to endgame(ish) and build my own from scratch, usi
 ## Specs
 - Custom ortholinear layout, designed in [ergogen](https://ergogen.cache.works)
 - Hand lubed gateron milky yellows *(classic)*
-    - My original keeb was done with Alpaca V2s, but for this one I wanted something with a little bit heavier actuation.
+    - My original kb was done with Alpaca V2s, but for this one I wanted something with a little bit heavier actuation.
 - TX "AP" Revision 4 stabs
 - Some cheap knockoff xda botanical caps from [aliexpress](https://www.aliexpress.com/item/1005004559625865)
     - which have japanese legends on them, since they were the only ones available 😔 oh well...
