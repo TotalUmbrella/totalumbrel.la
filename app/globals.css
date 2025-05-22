@@ -245,7 +245,7 @@ body {
   margin-right: auto;
   max-width: 100%;
   margin-top: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .multiple-image {
@@ -294,13 +294,13 @@ code[class*="language-"] {
   background: transparent !important;
   overflow: auto;
   line-height: 1.5;
-
+  margin-bottom: 0.5rem !important;
 }
 
 
 code[class*="language-"] {
   margin-bottom: 1rem !important;
-  padding: 2rem !important;
+  padding: 1rem !important;
   background-color: #11151d !important;
   border-radius: 0.7rem !important;
   overflow-wrap: ;

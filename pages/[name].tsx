@@ -16,7 +16,7 @@ const Page = ({ contents, data, tags }) => {
       return (
         <div className="flex items-center justify-center min-h-screen">
           <Head>
-          <title>{data.title}</title>
+          <title>totalumbrel.la - {data.title}</title>
           <link rel="icon" type="image/x-icon" href="/totalumbrel.la/favicon.ico"></link>
           </Head>
           <div className="flex flex-col items-left justify-between min-h-screen py-2 w-1/2">
