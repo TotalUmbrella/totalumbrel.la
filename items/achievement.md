@@ -9,7 +9,7 @@ tags: ["project"]
   <figcaption>my top played games 😅</figcaption>
 </figure>
 
-<span class="first">I</span>'ve yet to figure out a name for this one, so for now it will simply be an unnamed steam achievement viewer 👾. This web-app takes your (or anyone elses) steam user id, and loads a list of all your games, with their playtime and achievement percentages for your **viewing pleasure**. Try it out for yourself [here!](totalumbrella.github.io/Achievement/)
+<span class="first">I</span>'ve yet to figure out a name for this one, so for now it will simply be an unnamed steam achievement viewer 👾. This web-app takes your (or anyone elses) steam user id, and loads a list of all your games, with their playtime and achievement percentages for your **viewing pleasure**. Try it out for yourself [here!](https://totalumbrella.github.io/Achievement/)
 
 ## Background
 Technically, this project was started **almost exactly a year** before the article was written, in *early-mid 2024*. It's conception came from a lazy day sitting around doing nothing, and trying to decide which steam game I should full complete next. 
