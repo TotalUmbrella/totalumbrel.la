@@ -1,5 +1,5 @@
 ---
-title: "Crest 61 - A diy columnar staggered split keyboard"
+title: "Crest 61 - A custom-designed columnar staggered split keyboard"
 date: "2024-11-25"
 tags: ["project"]
 ---
